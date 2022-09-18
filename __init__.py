@@ -1,7 +1,7 @@
 from flask import Flask
 import threading
-from controllers1.entity_controller import entity_controller
-from repositories1.sqs_reciever import consume_messages
+from controllers.entity_controller import entity_controller
+from repositories.sqs_reciever import consume_messages
 
 app = Flask(__name__)
 
