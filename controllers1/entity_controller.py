@@ -1,6 +1,6 @@
 from flask import make_response, Blueprint, request
-from services.entity_service import send_event_to_queue
-from repositories.atlas_connector import get_server_info
+from services1.entity_service import send_event_to_queue
+from repositories1.atlas_connector import get_server_info
 
 entity_controller = Blueprint('entity_controller', __name__, template_folder='templates')
 
