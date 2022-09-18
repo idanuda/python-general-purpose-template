@@ -2,7 +2,7 @@ import pymongo
 import certifi
 from decouple import config
 
-client = pymongo.MongoClient(config("ATLAS_QA_CONN_STRING"), serverSelectionTimeoutMS=5000, tlsCAFile=certifi.where())
+client = pymongo.MongoClient(config(""), serverSelectionTimeoutMS=5000, tlsCAFile=certifi.where())
 
 
 def get_server_info(collection_name, doc_id):
